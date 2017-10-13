@@ -1,0 +1,114 @@
+<div class="brand">
+
+  <!-- logo -->
+  <div class="brand-logo">
+    <img data-ng-src="images/logo.png" height="15" alt="">
+  </div>
+  <!-- /logo -->
+
+  <!-- toggle small sidebar menu -->
+  <a href="javascript:;" class="toggle-sidebar hidden-xs hamburger-icon v3" data-ng-click="app.layout.isSmallSidebar = !app.layout.isSmallSidebar">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  <!-- /toggle small sidebar menu -->
+
+</div>
+
+<!-- main navigation -->
+<nav role="navigation" side-navigation>
+
+  <ul class="nav">
+
+    <!-- dashboard -->
+    <li ui-sref-active="active">
+      <a href="#/">
+        <i class="fa fa-flask"></i>
+        <span>Admin Panel</span>
+      </a>
+    </li>
+    <!-- /dashboard -->
+
+    <!-- ui -->
+    <li data-ng-class="{open: $state.includes('app.ui')}">
+      <a href="javascript:;">
+        <i class="fa fa-toggle-on"></i>
+        <span>Association</span>
+      </a>
+      <ul class="sub-menu">
+        <li ui-sref-active="active">
+          <a ui-sref="app.create.association">
+            <span>Create Association</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.association.list">
+            <span>Association List</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.ui.tabs_accordion">
+            <span>Association Statistics</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.ui.directory">
+            <span>Directory</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- /ui -->
+
+    <!-- forms 
+    <li data-ng-class="{open: $state.includes('app.forms')}">
+      <a href="javascript:;">
+        <i class="fa fa-tint"></i>
+        <span>Logs &amp; Surveillance</span>
+      </a>
+      <ul class="sub-menu">
+        <li ui-sref-active="active">
+          <a ui-sref="app.forms.native_forms">
+            <span>Service Providers</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.forms.advanced_forms">
+            <span>Securities</span>
+          </a>
+        </li>
+
+        <li ui-sref-active="active">
+          <a ui-sref="app.forms.wizard">
+            <span>Residients</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.forms.editors">
+            <span>Management Committee</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.forms.upload">
+            <span>Association Info</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.forms.masks">
+            <span>Payment</span>
+          </a>
+        </li>
+      </ul>
+    </li>-->
+    <!-- /forms -->
+
+   
+
+   
+  
+
+  </ul>
+</nav>
+<!-- /main navigation -->
